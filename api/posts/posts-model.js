@@ -16,7 +16,9 @@ function find() {
 }
 
 function findById(id) {
-  return db('posts').where({ id: Number(id) }).first()
+  return db('posts')
+  .where({ id: Number(id) })
+  .first()
 }
 
 function insert(post) {
